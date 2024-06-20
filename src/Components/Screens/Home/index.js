@@ -30,7 +30,9 @@ export default function pg() {
           source={require('../../../../src/img/logo.png')}
           style={[styles.image, styles.alignLeft]}
         />
-        {/* Demais itens do cabeçalho */}
+       <TouchableOpacity onPress={() => navigation.navigate('Welcome')}>
+          <Text style={styles.menuItem}>Início</Text>
+        </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('MC')}>
           <Text style={styles.menuItem}>Minha Conta</Text>
         </TouchableOpacity>
@@ -40,7 +42,7 @@ export default function pg() {
         <TouchableOpacity onPress={() => navigation.navigate('Welcome')}>
           <Text style={styles.menuItem}>Comprar Módulo</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('tut')}>
+        <TouchableOpacity onPress={() => navigation.navigate('Tut')}>
           <Text style={styles.menuItem}>Tutorial</Text>
         </TouchableOpacity>
         <FontAwesomeIcon icon={faMagnifyingGlass} size="2x" style={styles.icon} />

@@ -2,8 +2,18 @@ import Home from "../Screens/Home";
 import Welcome from "../Screens/Welcome";
 import Data from "../Screens/Data";
 import MC from "../Screens/MC";
-import pg from "../Screens/pg";
-import tut from "../Screens/tut";
+import Pg from "../Screens/Pg";
+import Tut from "../Screens/Tut";
+import ptemp from "../Screens/ptemp";
+import Plumi from "../Screens/Plumi";
+import Pphi from "../Screens/Pphi";
+import Signup from "../Screens/Signup";
+import Loginf from "../Screens/Loginf";
+
+
+
+
+
 
 
 
@@ -16,9 +26,17 @@ export default function routes() {
   return (
    <NavigationContainer>
    <Stack.Navigator>
-
-   
-   
+  
+  <Stack.Screen
+   name="Loginf"
+   component = {Loginf}
+   options={{hearderShown:false}}
+  />
+    <Stack.Screen
+   name="Signup"
+   component = {Signup}
+   options={{hearderShown:false}}
+  />
   <Stack.Screen
    name="Welcome"
    component = {Welcome}
@@ -40,15 +58,31 @@ export default function routes() {
    options={{headerShown: false}}
   />
    <Stack.Screen
-   name="pg"
-   component={pg}
+   name="Pg"
+   component={Pg}
    options={{headerShown: false}}
   />
   <Stack.Screen
-   name="tut"
-   component={tut}
+   name="Tut"
+   component={Tut}
    options={{headerShown: false}}
   />
+  <Stack.Screen
+   name="ptemp"
+   component={ptemp}
+   options={{headerShown: false}}
+  />
+  <Stack.Screen
+   name="plumi"
+   component={Plumi}
+   options={{headerShown: false}}
+  />
+  <Stack.Screen
+   name="pphi"
+   component={Pphi}
+   options={{headerShown: false}}
+  />
+  
     
    </Stack.Navigator>
 

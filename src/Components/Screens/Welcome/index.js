@@ -21,8 +21,7 @@ export default function Welcome() {
     <View style={{flexDirection:'row'}}>
     <Image  source={require('../../../../src/img/logo.png')}
     style={[styles.image, styles.alignLeft]} />
-    <FontAwesomeIcon icon={faMagnifyingGlass} size="2x" style={{color:'#a2101a',  marginLeft:400,  marginTop:20}} />
-    <FontAwesomeIcon icon={faUserCircle} size="2x" style={{color:'#a2101a',  marginLeft:20,  marginTop:20}} />
+   
     </View>
     
       
@@ -71,14 +70,14 @@ export default function Welcome() {
      </View>
 
      <View style={{flexDirection:'column-reverse'}}>
-    <TouchableOpacity onPress={() => navigation.navigate('Data') } >
+    <TouchableOpacity onPress={() => navigation.navigate('Fb') } >
     <FontAwesomeIcon icon={faCartPlus} size="4x" style={{color:'#a2101a',  marginRight: 170, marginTop:10}} />
     </TouchableOpacity>
     <Text style={{color:'black',marginRight:165,  fontSize:15, fontWeight: 'bold'}}>
       Comprar Módulo</Text>
      </View>
      <View style={{flexDirection:'column-reverse'}}>
-    <TouchableOpacity onPress={() => navigation.navigate('tut') } >
+    <TouchableOpacity onPress={() => navigation.navigate('Tut') } >
     <FontAwesomeIcon icon={faPlayCircle} size="4x" style={{color:'#a2101a',  marginRight: 170, marginTop:10}} />
     </TouchableOpacity>
     <Text style={{color:'black',marginRight:165,  fontSize:15, fontWeight: 'bold'}}>
@@ -123,7 +122,7 @@ const styles = StyleSheet.create({
       width: 140,
       height: 70,
       marginTop: 15, // Margem superior
-      marginLeft: 560, // Margem à esquerda
+      marginLeft: 470, // Margem à esquerda
     
     },
    textoicone:{

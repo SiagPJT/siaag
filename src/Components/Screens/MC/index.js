@@ -14,6 +14,11 @@ import { faHome, faUserCircle, faMagnifyingGlass, faArrowAltCircleLeft} from '@f
        <View style={styles.cabecario}>
       <Image  source={require('../../../../src/img/logo.png')}
       style={[styles.image, styles.alignLeft]} />
+      <TouchableOpacity onPress={() => navigation.navigate('Welcome') } >
+      <Text style={{color:'black',marginLeft: 90, marginTop:30,  fontSize:19, fontWeight: 'bold'}}>
+        Início
+      </Text>
+        </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate('MC') } >
       <Text style={{color:'black',marginLeft: 90, marginTop:30,  fontSize:19, fontWeight: 'bold'}}>
         Minha Conta
@@ -29,7 +34,7 @@ import { faHome, faUserCircle, faMagnifyingGlass, faArrowAltCircleLeft} from '@f
         Comprar Módulo
       </Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('tut') } >
+        <TouchableOpacity onPress={() => navigation.navigate('Tut') } >
       <Text style={{color:'black',marginLeft: 90, marginTop:30, fontSize:19, fontWeight: 'bold'}}> 
         Tutorial
       </Text>

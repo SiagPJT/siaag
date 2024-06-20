@@ -14,6 +14,12 @@ import { faHome, faUserCircle, faMagnifyingGlass, faArrowAltCircleLeft} from '@f
        <View style={styles.cabecario}>
       <Image  source={require('../../../../src/img/logo.png')}
       style={[styles.image, styles.alignLeft]} />
+
+      <TouchableOpacity onPress={() => navigation.navigate('Welcome') } >
+      <Text style={{color:'black',marginLeft: 90, marginTop:30,  fontSize:19, fontWeight: 'bold'}}>
+       Início
+      </Text>
+        </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate('MC') } >
       <Text style={{color:'black',marginLeft: 90, marginTop:30,  fontSize:19, fontWeight: 'bold'}}>
         Minha Conta
@@ -29,7 +35,7 @@ import { faHome, faUserCircle, faMagnifyingGlass, faArrowAltCircleLeft} from '@f
         Comprar Módulo
       </Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('tut') } >
+        <TouchableOpacity onPress={() => navigation.navigate('Tut') } >
       <Text style={{color:'black',marginLeft: 90, marginTop:30, fontSize:19, fontWeight: 'bold'}}> 
         Tutorial
       </Text>
@@ -44,7 +50,7 @@ import { faHome, faUserCircle, faMagnifyingGlass, faArrowAltCircleLeft} from '@f
         width: 50,  height: 50}} />
         </TouchableOpacity>
         <View style={{flexDirection:'column'}}>
-    <TouchableOpacity onPress={() => navigation.navigate('pg') } >
+    <TouchableOpacity onPress={() => navigation.navigate('Pg') } >
     <FontAwesomeIcon icon={faHome} size="4x" style={{color:'#a2101a',  marginLeft: 170, marginTop:200, width: 150,
       height: 150}} />
     <Text style={{color:'black',marginLeft:184, marginTop:5,  fontSize:30, fontWeight: 'bold'}}>
@@ -53,7 +59,7 @@ import { faHome, faUserCircle, faMagnifyingGlass, faArrowAltCircleLeft} from '@f
      </View>
      
      <View style={{flexDirection:'column'}}>
-     <TouchableOpacity onPress={() => navigation.navigate('pg') } >
+     <TouchableOpacity onPress={() => navigation.navigate('Pg') } >
     <FontAwesomeIcon icon={faHome} size="4x" style={{color:'#a2101a',  marginLeft: 170, marginTop:200, width: 150,
       height: 150}} />
     <Text style={{color:'black',marginLeft:184, marginTop:5,  fontSize:30, fontWeight: 'bold'}}>
@@ -62,7 +68,7 @@ import { faHome, faUserCircle, faMagnifyingGlass, faArrowAltCircleLeft} from '@f
      </View>
      
      <View style={{flexDirection:'column'}}>
-     <TouchableOpacity onPress={() => navigation.navigate('pg') } >
+     <TouchableOpacity onPress={() => navigation.navigate('Pg') } >
     <FontAwesomeIcon icon={faHome} size="4x" style={{color:'#a2101a',  marginLeft: 170, marginTop:200, width: 150,
       height: 150}} />
     <Text style={{color:'black',marginLeft:184, marginTop:5,  fontSize:30, fontWeight: 'bold',}}>

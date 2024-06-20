@@ -1,10 +1,11 @@
 import { useNavigation } from '@react-navigation/native';
-import {TouchableOpacity,StyleSheet, Text, View, Image, } from 'react-native';
+import {TouchableOpacity,StyleSheet, Text, View, Image, ActivityIndicator} from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUserCircle, faMagnifyingGlass, faArrowAltCircleLeft} from '@fortawesome/free-solid-svg-icons';
 
-    export default function tut() {
-      
+
+    export default function pph() {
+        
 
     const navigation = useNavigation();
     return (
@@ -34,7 +35,7 @@ import { faHome, faUserCircle, faMagnifyingGlass, faArrowAltCircleLeft} from '@f
         Comprar Módulo
       </Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('tut') } >
+        <TouchableOpacity onPress={() => navigation.navigate('Tut') } >
       <Text style={{color:'black',marginLeft: 90, marginTop:30, fontSize:19, fontWeight: 'bold'}}> 
         Tutorial
       </Text>
@@ -43,15 +44,8 @@ import { faHome, faUserCircle, faMagnifyingGlass, faArrowAltCircleLeft} from '@f
        <FontAwesomeIcon icon={faUserCircle} size="2x" style={{color:'#a2101a',  marginLeft:20,  marginTop:20}} />
         </View>
 
-        <View style={{flexDirection:'row'}}>
-          <TouchableOpacity onPress={()=> navigation.navigate('Welcome')}>
-        <FontAwesomeIcon icon={faArrowAltCircleLeft} size="2x" style={{color:'#fcc429',  marginLeft:30,  marginTop:250, 
-        width: 50,  height: 50}} />
-        </TouchableOpacity>
-    
-
-     </View>
-        </view>
+ </view>
+       
         );
 
 }
